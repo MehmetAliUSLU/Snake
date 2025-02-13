@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 449168682}
   m_Layer: 0
   m_Name: Wall (4)
-  m_TagString: Obstacle
+  m_TagString: ObstacleDown
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +376,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 953435344}
   m_Layer: 0
   m_Name: Wall (1)
-  m_TagString: Obstacle
+  m_TagString: ObstacleLeft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -731,7 +731,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -868,7 +868,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ssegmentPrefab: {fileID: 8022601323475856151, guid: 4a7e26ac403ab17428925573ce0e1a09, type: 3}
   initialSize: 4
-  goal: 7
 --- !u!61 &1303980005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1025,7 +1024,7 @@ GameObject:
   - component: {fileID: 1588848868}
   m_Layer: 0
   m_Name: Wall (2)
-  m_TagString: Obstacle
+  m_TagString: ObstacleUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1121,7 +1120,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1159,7 +1158,7 @@ GameObject:
   - component: {fileID: 1955152918}
   m_Layer: 0
   m_Name: Wall (3)
-  m_TagString: Obstacle
+  m_TagString: ObstacleRight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1255,7 +1254,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

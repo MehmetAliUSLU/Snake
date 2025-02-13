@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Snake : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Snake : MonoBehaviour
     public Transform ssegmentPrefab;
 
     public int initialSize = 4;
+
+    public int goal=15;
+
+    private int score = 0;  
 
     void Start()
     {
@@ -35,9 +40,25 @@ public class Snake : MonoBehaviour
         {
             _direction = Vector2.right;
         }
+
+        if (_segments.Count==goal)
+        {
+            WinGame();
+        }
         
     }
 
+    private void WinGame()
+    {
+        if (SceneManager.GetAllScenes().Length != SceneManager.GetActiveScene().buildIndex)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
     private void FixedUpdate()
     {
@@ -83,11 +104,37 @@ public class Snake : MonoBehaviour
     {
         if (other.tag == "Food")
         {
+            score++;
             Grow();
+
         }
         else if (other.tag == "Obstacle")
         {
             ResetGame();
+        }
+        else if (other.tag == "ObstacleDown")
+        {
+            this.transform.position = new Vector3(
+                this.transform.position.x,this.transform.position.y+26,0.0f
+                );
+        }
+        else if (other.tag == "ObstacleUp")
+        {
+            this.transform.position = new Vector3(
+                this.transform.position.x, this.transform.position.y -26, 0.0f
+                );
+        }
+        else if (other.tag == "ObstacleLeft")
+        {
+            this.transform.position = new Vector3(
+                this.transform.position.x+52, this.transform.position.y, 0.0f
+                );
+        }
+        else if (other.tag == "ObstacleRight")
+        {
+            this.transform.position = new Vector3(
+                 this.transform.position.x - 52, this.transform.position.y, 0.0f
+                 );
         }
     }
 }
