@@ -267,6 +267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridArea: {fileID: 1170302184}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &449168681
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +281,7 @@ GameObject:
   - component: {fileID: 449168684}
   - component: {fileID: 449168683}
   - component: {fileID: 449168682}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -633,7 +636,7 @@ GameObject:
   - component: {fileID: 953435346}
   - component: {fileID: 953435345}
   - component: {fileID: 953435344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -868,7 +871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ssegmentPrefab: {fileID: 8022601323475856151, guid: 4a7e26ac403ab17428925573ce0e1a09, type: 3}
   initialSize: 4
-  goal: 7
+  goal: 15
 --- !u!61 &1303980005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1023,7 +1026,7 @@ GameObject:
   - component: {fileID: 1588848870}
   - component: {fileID: 1588848869}
   - component: {fileID: 1588848868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1157,7 +1160,7 @@ GameObject:
   - component: {fileID: 1955152920}
   - component: {fileID: 1955152919}
   - component: {fileID: 1955152918}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

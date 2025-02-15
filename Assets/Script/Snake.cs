@@ -50,7 +50,7 @@ public class Snake : MonoBehaviour
 
     private void WinGame()
     {
-        if (SceneManager.GetAllScenes().Length != SceneManager.GetActiveScene().buildIndex)
+        if (SceneManager.sceneCount != SceneManager.GetActiveScene().buildIndex)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
@@ -115,25 +115,25 @@ public class Snake : MonoBehaviour
         else if (other.tag == "ObstacleDown")
         {
             this.transform.position = new Vector3(
-                this.transform.position.x,this.transform.position.y+26,0.0f
+                this.transform.position.x,this.transform.position.y+25,0.0f
                 );
         }
         else if (other.tag == "ObstacleUp")
         {
             this.transform.position = new Vector3(
-                this.transform.position.x, this.transform.position.y -26, 0.0f
+                this.transform.position.x, this.transform.position.y -25, 0.0f
                 );
         }
         else if (other.tag == "ObstacleLeft")
         {
             this.transform.position = new Vector3(
-                this.transform.position.x+52, this.transform.position.y, 0.0f
+                this.transform.position.x+51, this.transform.position.y, 0.0f
                 );
         }
         else if (other.tag == "ObstacleRight")
         {
             this.transform.position = new Vector3(
-                 this.transform.position.x - 52, this.transform.position.y, 0.0f
+                 this.transform.position.x - 51, this.transform.position.y, 0.0f
                  );
         }
     }
